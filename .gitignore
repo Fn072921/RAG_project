@@ -1,0 +1,94 @@
+# ===== 环境与密钥 =====
+.env
+.env.*
+!.env.example
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# 虚拟环境
+.venv/
+venv/
+ENV/
+env/
+.python-version
+
+# ===== 测试与缓存 =====
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# ===== 日志 =====
+*.log
+logs/
+
+# ===== Jupyter =====
+.ipynb_checkpoints/
+
+# ===== PyCharm / IDE =====
+.idea/
+!.idea/inspectionProfiles/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# ===== 操作系统 =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== RAG 项目运行时产物 =====
+# Chroma 向量库
+chroma_db/
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+
+# 会话历史
+chat_history/
+chat_history_*.json
+
+# 上传/临时文件
+uploads/
+temp/
+tmp/
+.cache/
+.langchain/
+
+# ===== Streamlit =====
+.streamlit/secrets.toml
+
+# ===== 数据 =====
+# 知识库原始文本需要版本管理，默认保留 data/
+# 如需忽略大体积文档，取消下面注释
+# data/*.pdf
+# data/*.docx
+# data/*.xlsx
