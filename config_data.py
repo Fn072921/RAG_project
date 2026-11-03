@@ -16,3 +16,10 @@ similarity_threshold = 1
 
 embedding_model_name = "text-embedding-v4"
 chat_model_name = "deepseek-flash"
+
+# session id 配置
+session_config = {
+    "configurable": {
+        "session_id": "user_001"
+    }
+}
