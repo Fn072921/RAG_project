@@ -90,7 +90,7 @@ class KnowledegBaseService(object):
 
         self.chroma.add_texts( # 内容就加载到向量库中了
             knowledge_chunks,
-            metadates = [metadate for _ in knowledge_chunks]
+            metadatas = [metadate for _ in knowledge_chunks]
         )
 
         save_md5(md5_str)
@@ -102,5 +102,5 @@ class KnowledegBaseService(object):
 
 if __name__ == '__main__':
     service = KnowledegBaseService()
-    r = service.upload_by_str("fn", "testfile")
+    r = service.upload_by_str("fnn", "testfile")
     print(r)
